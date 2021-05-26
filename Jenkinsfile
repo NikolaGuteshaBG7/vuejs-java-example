@@ -67,7 +67,7 @@ pipeline
             
             steps
             {
-                //sh 'echo $JAVA_HOME'
+                sh 'echo $JAVA_HOME'
                 sh 'mvn -B -e -X'
             }
         }
