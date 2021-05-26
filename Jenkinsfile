@@ -58,16 +58,7 @@ pipeline
         {
             steps
             {
-                
-                sh 'pwd'
-                
-                /*
-                echo "Building FE app"
-               nodejs('Node16.2.0')
-                {
-                    sh 'npm run-script build'
-                }*/
-
+                sh 'mvn clean install'
             }
         }
 
