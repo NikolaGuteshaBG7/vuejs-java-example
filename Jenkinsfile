@@ -54,7 +54,7 @@ pipeline
                 echo "Building FE app"
                nodejs('Node16.2.0')
                 {
-                    sh 'npm run build'
+                    sh 'npm build'
                 }
 
             }
