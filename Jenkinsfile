@@ -67,7 +67,7 @@ pipeline
             
             steps
             {
-                sh 'sudo mvn -B -e -X'
+                sh 'mvn -B -e -X'
             }
         }
 
