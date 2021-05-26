@@ -58,7 +58,7 @@ pipeline
         {
             steps
             {
-                sh 'mvn clean install -e'
+                sh 'mvn -B'
             }
         }
 
