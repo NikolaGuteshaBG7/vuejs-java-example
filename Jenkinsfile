@@ -61,16 +61,16 @@ pipeline
                 docker
                 {
                     image 'maven:3.8.1-adoptopenjdk-11' 
-                    args '-v /root/.m2:/root/.m2' 
+                    args '-v /root/.m2:/root/.m2 --env JAVA_HOME=HUAAAAAAAAAAaaaaa' 
                 }
             }
             
             steps
             {
                 sh 'echo $JAVA_HOME'
-                sh 'cat /etc/environment'
+                //sh 'cat /etc/environment'
                 
-                sh 'sudo echo $JAVA_HOME >> /etc/environment'
+                //sh 'sudo echo $JAVA_HOME >> /etc/environment'
 
               //  sh 'cat /etc/environment'
                 //sh 'mvn -B -e -X'
