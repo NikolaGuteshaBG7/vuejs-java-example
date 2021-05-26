@@ -18,7 +18,7 @@ pipeline
                 echo "Installing npm packages"
                 nodejs('Node16.2.0')
                 {
-                    sh 'npm -g install'
+                    sh 'npm install -g'
                 }
 
             }
