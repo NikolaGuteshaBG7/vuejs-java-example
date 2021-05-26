@@ -73,7 +73,7 @@ pipeline
                 //sh 'sudo echo $JAVA_HOME >> /etc/environment'
 
               //  sh 'cat /etc/environment'
-                //sh 'mvn -B -e -X'
+                sh 'mvn -B -e -X'
             }
         }
 
