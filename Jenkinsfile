@@ -58,10 +58,9 @@ pipeline
         {
             steps
             {
-                dir("./../")
-                {
+                
                 sh 'pwd'
-                }
+                
                 /*
                 echo "Building FE app"
                nodejs('Node16.2.0')
