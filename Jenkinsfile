@@ -5,7 +5,7 @@ pipeline
     {
         // front end
 
-        stage("Isntall FE packages")
+        stage("Install FE packages")
         {
             steps
             {
@@ -28,6 +28,11 @@ pipeline
         {
             steps
             {
+                dir("src/main/ui")
+                {
+                sh 'pwd'
+                }
+                
                 echo "Auditing npm packages"
                 nodejs('Node16.2.0')
                 {
@@ -41,10 +46,15 @@ pipeline
         {
             steps
             {
+                dir("src/main/ui")
+                {
+                sh 'pwd'
+                }
+                
                 echo "Building FE app"
                 nodejs('Node16.2.0')
                 {
-                    sh 'npm run build'
+                    sh 'npm build'
                 }
 
             }
