@@ -69,7 +69,11 @@ pipeline
             {
                 sh 'echo $JAVA_HOME'
                 sh 'cat /etc/environment'
-                sh 'mvn -B -e -X'
+                
+                sh ' echo $JAVA_HOME >> /etc/environment'
+
+                sh 'cat /etc/environment'
+                //sh 'mvn -B -e -X'
             }
         }
 
