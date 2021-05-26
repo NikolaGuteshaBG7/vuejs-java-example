@@ -10,6 +10,10 @@ pipeline
             steps
             {
                 dir("src/main/ui")
+                {
+                sh 'pwd'
+                }
+                
 
                 echo "Installing npm packages"
                 nodejs('Node16.2.0')
