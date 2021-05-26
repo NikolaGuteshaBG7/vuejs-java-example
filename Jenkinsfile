@@ -5,7 +5,7 @@ pipeline
     {
         // front end
 
-        stage("Build FE")
+        stage("Isntall FE packages")
         {
             steps
             {
