@@ -1,6 +1,10 @@
 pipeline
 {
     agent any
+    tools { 
+        maven 'Maven 3.3.9' 
+       // jdk 'jdk8' 
+    }
     stages
     {
         // front end
@@ -41,21 +45,29 @@ pipeline
 
             }
         }
+        
+        stage("Test FE")
+        {
+            steps
+            {                 
+                echo "Testing......"                
+            }
+        }
 
-        stage("Build FE")
+        stage("Build BE")
         {
             steps
             {
-                dir("src/main/ui")
+                dir("~/firstMavenJob")
                 {
                 sh 'pwd'
                 }
-                
+                /*
                 echo "Building FE app"
                nodejs('Node16.2.0')
                 {
                     sh 'npm run-script build'
-                }
+                }*/
 
             }
         }
