@@ -67,8 +67,7 @@ pipeline
             
             steps
             {
-                echo 'SOMETHING!'
-                /*
+                
                sh 'echo HUAAAAA'
                 //sh 'cat /etc/environment'
                 
@@ -76,7 +75,7 @@ pipeline
 
               //  sh 'cat /etc/environment'
                // sh 'mvn -B -e -X'
-                sh 'mvn -v'*/
+                /*sh 'mvn -v'*/
             }
         }
 
