@@ -65,7 +65,8 @@ pipeline
             steps
             {              
                 sh "mvn -v"
-                sh 'sudo mvn -B -e -X'                
+               // sh 'sudo mvn -B -e -X' 
+                sh 'mvn clean install'
             }
         }
     
