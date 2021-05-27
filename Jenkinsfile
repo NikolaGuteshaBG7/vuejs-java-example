@@ -20,7 +20,8 @@ pipeline
             
             steps
             {              
-                sh "mvn -v"
+                sh "java -v"
+                
             }
         }
     
