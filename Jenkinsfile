@@ -9,7 +9,7 @@ pipeline
     {
         // front end
 
-      /*  stage("Install FE packages")
+        stage("Install FE packages")
         {
             steps
             {
@@ -53,7 +53,7 @@ pipeline
                 echo "Testing......"                
             }
         }
-*/
+/*
         stage("Build BE")
         {
            /* agent
@@ -63,7 +63,7 @@ pipeline
                     image 'maven:3.8-adoptopenjdk-11' 
                     args '-v /root/.m2:/root/.m2' 
                 }
-            }*/
+            }
             
             steps
             {
@@ -77,7 +77,7 @@ pipeline
                // sh 'mvn -B -e -X'
                 sh 'mvn -v'
             }
-        }
+        }*/
 
 
     }
