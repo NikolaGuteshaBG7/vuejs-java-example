@@ -1,10 +1,10 @@
 pipeline
 {
     agent any
-    tools { 
+    /*tools { 
         maven 'maven1' 
         jdk 'openjdk-11' 
-    }
+    }*/
     stages
     {         
         stage("Build BE")
