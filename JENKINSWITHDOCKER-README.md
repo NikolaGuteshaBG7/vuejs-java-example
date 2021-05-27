@@ -19,4 +19,20 @@ FORMAT:
         }
     }
 
+
+MOUNT FOLDER TO PRESERVE DATA!!!!!!!!
+agent 
+    { 
+        docker
+        {
+         image "maven:3.6.0-jdk-13"
+         args '-v /root/.m2:/root/.m2' 
+         }
+    } 
+
+
+
+
+
+
 DOCKERFILE::::
