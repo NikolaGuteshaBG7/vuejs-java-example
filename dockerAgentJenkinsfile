@@ -18,7 +18,7 @@ pipeline
             {              
                 sh "mvn -v"
                // sh 'sudo mvn -B -e -X' 
-        //       sh 'mvn clean install'
+               sh 'mvn clean install'
             }
         }
     
