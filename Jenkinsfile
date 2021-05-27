@@ -23,6 +23,10 @@ pipeline
                 sh 'mvn -v'
             }
         }
+    
+
+
+    }
         
         post
         {
@@ -31,9 +35,6 @@ pipeline
                 cleanWs()                
             }
         }
-
-
-    }
 
 
 }
