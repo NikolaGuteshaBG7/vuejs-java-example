@@ -67,7 +67,7 @@ pipeline
             
             steps
             {
-                sh 'echo $JAVA_HOME'
+               // sh 'echo $JAVA_HOME'
                 //sh 'cat /etc/environment'
                 
                 //sh 'sudo echo $JAVA_HOME >> /etc/environment'
