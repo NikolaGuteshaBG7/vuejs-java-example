@@ -1,12 +1,13 @@
 pipeline
 {
-    agent any
-    tools
+    agent 
     { 
-        maven 'maven1' 
+         image "maven:3.6.0-jdk-13"
+         label "docker"
     }
     stages
-    {         
+    {    
+    /*
         stage("Install FE packages")
         {
             steps
@@ -51,6 +52,7 @@ pipeline
                 echo "Testing......"                
             }
         }
+        */
         stage("Build BE")
         {
            /* agent
