@@ -20,7 +20,7 @@ pipeline
             
             steps
             {              
-                sh "dir"
+                sh "mvn -v"
             }
         }
     
