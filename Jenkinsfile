@@ -9,7 +9,7 @@ pipeline
     {
         // front end
 
-        stage("Install FE packages")
+      /*  stage("Install FE packages")
         {
             steps
             {
@@ -53,7 +53,7 @@ pipeline
                 echo "Testing......"                
             }
         }
-
+*/
         stage("Build BE")
         {
            /* agent
