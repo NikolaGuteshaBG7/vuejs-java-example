@@ -7,3 +7,12 @@ Instructions:
 2. Set repo and jenkinsfile location ( from git, default name Jenkinsfile) !!Pay attention to the BRANCH!!!!!
 
 3. BUILD
+
+
+
+
+!!!!!!!!!!!!!!!!
+
+When building a maven application, just import MAVEN in the tools section. no JDK.
+It'll confuse the machine
+!!!!!!!!!!!!!!!!!!!!!!!!!!!
