@@ -16,3 +16,7 @@ Instructions:
 When building a maven application, just import MAVEN in the tools section. no JDK.
 It'll confuse the machine
 !!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+Maven instructions:
+https://www.youtube.com/watch?v=HaGeSq-SB9E
