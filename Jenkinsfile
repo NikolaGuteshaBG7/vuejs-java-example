@@ -8,7 +8,7 @@ pipeline
     stages
     {
         // front end
-/*
+
         stage("Install FE packages")
         {
             steps
@@ -52,7 +52,7 @@ pipeline
             {                 
                 echo "Testing......"                
             }
-        }*/
+        }
 
         stage("Build BE")
         {
