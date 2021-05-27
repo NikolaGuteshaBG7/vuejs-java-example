@@ -68,14 +68,14 @@ pipeline
             steps
             {
                 
-               sh 'echo HUAAAAA'
+             //  sh 'echo HUAAAAA'
                 //sh 'cat /etc/environment'
                 
                 //sh 'sudo echo $JAVA_HOME >> /etc/environment'
 
               //  sh 'cat /etc/environment'
                // sh 'mvn -B -e -X'
-                /*sh 'mvn -v'*/
+                sh 'mvn -v'
             }
         }
 
